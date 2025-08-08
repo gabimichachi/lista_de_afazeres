@@ -1,3 +1,5 @@
+lista_tarefas = []
+
 while True:
     print('''
         ╔════════════════════════════════════════════════════════╗
@@ -12,7 +14,7 @@ while True:
         ╠════════════════════════════════════════════════════════╣
             ''')
 
-    lista_tarefas = []
+
 
     # tarefa = input("qual tarefa você quer realizar?")
 
@@ -24,10 +26,10 @@ while True:
         lista_tarefas.append(tarefa_add)
 
     elif tarefa == 2:
-        cont = 0 
-        for tarefa in lista_tarefas:
-            print(f"{cont} -{tarefa}")
-            cont +=1
+        cont = 0
+        for nome_tarefa in lista_tarefas:
+            print(f"{cont} - {nome_tarefa}")
+            cont += 1
 
     elif tarefa == 3:
         concluida = int(input("qual número da lista você concluiu?"))
@@ -37,6 +39,6 @@ while True:
         excluir = int(input("qual item você deseja excluir?: "))
         lista_tarefas.pop(excluir)
 
-    elif tarefa>4:
+    elif tarefa >= 5:
         print("você saiu")
         break
