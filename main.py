@@ -1,7 +1,7 @@
 lista_tarefas = []
 with open('banco de dados.txt', 'r') as arquivo:
     for tarefa in arquivo:
-        lista_tarefas.append[lista_tarefas.strip()]
+        lista_tarefas.append(lista_tarefas.strip())
 
 while True:
     print('''
