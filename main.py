@@ -4,11 +4,11 @@ while True:
         ║                TO-DO LIST - MENU PRINCIPAL             ║
         ╠════════════════════════════════════════════════════════╣
         ║  1. adicionar tarefa                                   ║
-        ║  2. remover tarefa                                     ║
-        ║  3. listar tarefas                                     ║
-        ║  4. concluir                                           ║
-        ║  5. listar concluídos                                  ║
-        ║  6. sair                                               ║
+        ║  2. listar tarefa                                      ║
+        ║  3. concluir                                           ║
+        ║  4. excluir tarefa                                     ║
+        ║  5. sair                                               ║
+        ║                                                        ║
         ╠════════════════════════════════════════════════════════╣
             ''')
 
@@ -38,5 +38,5 @@ while True:
         lista_tarefas.pop(excluir)
 
     elif tarefa>4:
-       print("você saiu")
-    break
+        print("você saiu")
+        break
